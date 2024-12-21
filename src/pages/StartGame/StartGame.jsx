@@ -3,8 +3,8 @@ import TextInputFormContainer from "../../Components/TextInputForm/TextInputForm
 
 function StartGame() {
   const navigate = useNavigate();
-  function handelSubmit() {
-    navigate("/play");
+  function handelSubmit(value) {
+    navigate("/play", { state: { wordSelected: value } });
   }
 
   return (
