@@ -19,3 +19,5 @@ function MaskedText({ text, usedLetters }) {
     </>
   );
 }
+
+export default MaskedText;
